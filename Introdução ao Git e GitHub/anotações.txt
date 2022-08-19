@@ -1,2 +1,50 @@
 Download git https://git-scm.com/downloads
  o Git Bash é um terminal extendido para otimizar o uso do Git.
+
+Criando um repositório no Git
+passo a passo
+
+-criar novo repositório no GitHub ( nomear + comentários)
+	adicionar o README
+-clonar o repositório via HTTPS
+-abrir o GitBash na pasta criada para o projeto no pc
+-colar no GitBash
+	Git clone  + o link do Git clone + enter
+	cd  +repositório que clonou (usando o Tab como atalho) para trabalhar
+dentro do repositório.
+	git status
+
+NO PC podemos criar pastas de textos com informações relevantes 
+para o projeto.
+
+NO GIT BASH
+	git status (já aparecendo a pasta nova)
+Para enviar p/ o controle de versão local
+	git add . ou git -a
+	git status (para confirmar se está ok)
+Para enviar para o controle de versão em nuvem (GitHub)
+	git commit -m "comentário relevante sobre o que se trata"
+	git status (confirmar se o commit ficou pronto para envio)
+	git push origin main (enviando todos os commits prontos para nuvem)
+Confirmar na plataforma
+
+Em caso de conflitos por edição na nuvem estar mais atualizada que o do
+Pc 
+
+Edição
+	git status (aparece pasta alterada)
+	git add* (para adc tudo)
+	git status (arquivo pronto para ser comitado)
+	git commit -m "comentário"
+	git push origin master ou main (provavelmente aparece erro)
+Precisa pegar o arquivo mais atualizado na nuvem, para poder fazer as
+as edições que deseja
+	git pull origin master
+Abrir e editar o arquivo
+voltar ao Git bash
+	git status (continua com conflito pq editou de novo)
+Para resolver commitar
+	git add*
+	git commit -m "comentário"
+	git push origin master
+Confirmar no GitHub
